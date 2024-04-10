@@ -2,6 +2,39 @@
 
 The following sections describe the changes for each release of Amazon Corretto 22.
 
+## Corretto version: 22.0.1.8.1
+Release Date: April 16, 2024
+
+**Target Platforms <sup>1</sup>**
+
++ RPM-based Linux using glibc 2.17 or later, x86_64
++ Debian-based Linux using glibc 2.17 or later, x86_64
++ RPM-based Linux using glibc 2.17 or later, aarch64
++ Debian-based Linux using glibc 2.17 or later, aarch64
++ Alpine-based Linux, x86_64
++ Alpine-based Linux, aarch64
++ Windows 10 or later, x86_64
++ macos 12.0 and later, x86_64
++ macos 12.0 and later, aarch64
+
+
+**1.** This is the platform targeted by the build. See [Using Amazon Corretto](https://aws.amazon.com/corretto/faqs/#Using_Amazon_Corretto)
+in the Amazon Corretto FAQ for supported platforms
+
+The following issues are addressed in 22.0.1.8.1:
+
+| Issue Name                                                        | Platform | Description                                                                        | Link                                                                   |
+|-------------------------------------------------------------------|----------|------------------------------------------------------------------------------------|------------------------------------------------------------------------|
+| Import jdk-22.0.1+8                                               | All      | Updates Corretto baseline to OpenJDK 22.0.1+8                                      | [jdk-22.0.1+8](https://github.com/openjdk/jdk22u/releases/tag/jdk-22.0.1+8) |
+
+The following CVEs are addressed in 22.0.1.8.1:
+
+| CVE            | CVSS | Component                      |
+|----------------|------|--------------------------------|
+| CVE-2024-21011 | 3.7  | hotspot/runtime                |
+| CVE-2024-21068 | 3.7  | hotspot/compiler               |
+| CVE-2024-21012 | 3.7  | core-libs/java.net             |
+
 ## Corretto version: 22.0.0.37.1
 Release Date: March 20, 2024
 
